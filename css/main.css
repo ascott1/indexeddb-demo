@@ -1,0 +1,226 @@
+/*
+  Reset
+  =========================================
+  http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+  Base Styles
+  =========================================
+*/
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, Helvetica, "Helvetica Neue", Ubuntu, Roboto, Segoe UI, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: #111111;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.content {
+  flex: 1;
+}
+
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+p {
+  margin-bottom: 2em;
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+a:link,
+a:visited {
+  color: #111;
+  font-weight: 700;
+}
+
+/*
+  Header Styles
+  =========================================
+*/
+
+.site-header {
+  background-color: #7FDBFF;
+  margin-bottom: 40px;
+  padding: 40px 0;
+}
+
+.site-header,
+.site-header a,
+.site-header a:link,
+.site-header a:visited {
+  color: #111;
+  text-decoration: none;
+}
+
+.site-header a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 600px) {
+  .site-title,
+  .site-nav {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+  }
+
+  .site-nav {
+    text-align: right;
+  }
+
+  .nav-list li {
+    display: inline-block;
+    padding-left: 1em;
+  }
+}
+
+
+/*
+  Main & Aside Styles
+  =========================================
+*/
+
+.intro {
+  margin-top: 1em;
+}
+
+.callout {
+  background-color: #ddd;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.main-content ul li {
+  list-style: square;
+  margin-left: 20px;
+}
+
+.main-content ol {
+  margin-left: 20px;
+}
+
+.main-content ul {
+  margin-bottom: 1em;
+}
+
+.image-list {
+  text-align: center;
+  font-size: .875em;
+}
+
+@media only screen and (min-width: 600px) {
+  .main-content,
+  .callout,
+  .image-list li  {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .main-content {
+    width: 66.6666666%;
+    padding-right: 10px;
+  }
+
+  .callout,
+  .image-list li {
+    width: 33.3333333%;
+  }
+
+  .image-list li {
+    padding: 0 50px;
+  }
+
+}
+
+
+/*
+  Footer Styles
+  =========================================
+*/
+
+.site-footer {
+  background-color: #7FDBFF;
+  margin-top: 40px;
+  padding: 40px 0;
+  text-align: center;
+}

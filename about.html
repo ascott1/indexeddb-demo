@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>IndexedDB Demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+      <div class="content">
+        <header class="site-header" role="banner">
+          <div class="wrap">
+            <h1 class="site-title"><a href="/" title="Home">Service Worker Demo</a>
+            </h1><nav class="site-nav" role="navigation">
+              <ul class="nav-list">
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://ethicalweb.org/">Ethical Web Development</a></li>
+                <li><a href="https://github.com/ascott1/indexeddb-demo">GitHub</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <div class="wrap">
+          <main class="main-content" role="main">
+              <h2>About</h2>
+
+              <p class="intro">
+                As web developers, we are responsible for shaping the experiences of user's online lives.
+                By making choices that are ethical and user-centered, we create a better web for everyone.
+              </p>
+
+              <ol class="principal-list">
+                <li>
+                  <h3 class="principal-list_title">Web applications should work for everyone</h3>
+                  <ul>
+                    <li>Built on top of progressive enhancement</li>
+                    <li>Prioritize accessibility</li>
+                    <li>Develop inclusive forms</li>
+                    <li>Test with real users</li>
+                  </ul>
+                </li>
+                <li>
+                  <h3 class="principal-list_title">Web applications should work everywhere</h3>
+                  <ul>
+                    <li>Built responsively</li>
+                    <li>Value performance</li>
+                    <li>Leverage off-line first capabilities</li>
+                    <li>Expose permanent, human readable, deep links</li>
+                  </ul>
+                </li>
+                <li>
+                  <h3 class="principal-list_title">Web applications should respect a user's privacy and security</h3>
+                  <ul>
+                    <li>Use https everywhere</li>
+                    <li>Respect user tracking preferences</li>
+                    <li>Provide users with clear information about how their information is used</li>
+                    <li>Allow users to export their data</li>
+                    <li>Secure user data</li>
+                  </ul>
+                </li>
+                <li>
+                  <h3 class="principal-list_title">Web developers should be considerate of their peers</h3>
+                  <ul>
+                    <li>Comment and document code</li>
+                    <li>Lint and test code</li>
+                    <li>Make use of source control and continuous integration</li>
+                    <li>Consume and contribute to open source when possible</li>
+                    <li>Treat other developers with respect</li>
+                    <li>Offer and follow a code of conduct for open source projects</li>
+                  </ul>
+                </li>
+              </ol>
+
+          </main><aside class="callout">
+            <p>
+              This demo is part of <a href="https://ethicalweb.org/">Ethical Web Design</a>,
+              a series of reports and resources written by <a href="https://twitter.com/adamdscott">Adam Scott</a>
+              and published by <a href="http://www.oreilly.com/">O'Reilly Media</a>. The reports are being
+              written in the open on <a href="https://github.com/ascott1/ethical-web-dev">GitHub</a>.
+            </p>
+          </aside>
+        </div> <!-- /.wrap -->
+      </div> <!-- /.content -->
+
+      <footer class="site-footer">
+        <div class="wrap">
+          This site is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>
+        </div>
+      </footer>
+
+        <script src="js/main.js"></script>
+        <!-- initiate the service worker -->
+        <script>
+          if( 'serviceWorker' in navigator ) {
+            navigator.serviceWorker
+             .register( '/service-worker.js' )
+             .catch(function( err ) {
+               console.log( 'ServiceWorker registration failed: ', err );
+             });
+           }
+        </script>
+    </body>
+</html>
