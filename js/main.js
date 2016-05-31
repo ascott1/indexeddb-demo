@@ -37,15 +37,15 @@ open.onsuccess = function() {
   });
 
   // query our data
-  var getColumbia = objectStore.get('STS-41-D');
-  var getChallenger = objectStore.get('STS-51-J');
+  var getDiscovery = objectStore.get('STS-41-D');
+  var getAtlantis = objectStore.get('STS-51-J');
 
   getColumbia.onsuccess = function() {
-    console.log(getColumbia.result.shuttle);
+    console.log(getDiscovery.result.shuttle);
   };
 
   getChallenger.onsuccess = function() {
-    console.log(getChallenger.result.launchDate);
+    console.log(getAtlantis.result.launchDate);
   };
 
   // close the db when the transaction is done
