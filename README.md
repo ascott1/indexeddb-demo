@@ -2,6 +2,8 @@
 
 > A simple IndexedDB demo.
 
+[View the Code](https://github.com/ascott1/indexeddb-demo/blob/master/js/main.js)
+
 Part of the [Ethical Web Design](https://ethicalweb.org/) demos.
 
 
