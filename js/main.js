@@ -37,8 +37,8 @@ open.onsuccess = function() {
   });
 
   // query our data
-  var getColumbia = objectStore.get('STS-1');
-  var getChallenger = objectStore.get('STS-6');
+  var getColumbia = objectStore.get('STS-41-D');
+  var getChallenger = objectStore.get('STS-51-J');
 
   getColumbia.onsuccess = function() {
     console.log(getColumbia.result.shuttle);
